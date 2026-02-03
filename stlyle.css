@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: antiquewhite;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.mobile-nav{
+    display: none;
+    position: fixed;
+    padding: 30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.mobile-nav ul{
+    display: flex;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+nav{
+    /* padding: 20px; */
+    padding: 19px 10px 0 10px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.87);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+nav li{
+    list-style: none;
+}
+.logo{
+    text-align: left !important;
+    font-family: cursive;
+    font-size: 20px;
+}
+#seachinput{
+    width: 378px;
+    height: 32px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color:  rgba(211, 209, 202, 0.459) ;
+    width: 450px ;
+    border: 1px solid antiquewhite;
+    border-radius: 20px;
+    }
+
+#seachinput:focus{
+    background-color: white;
+    border: none;
+}
+
+#login-btn, #signup-btn{
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color:  rgb(209, 191, 85) ;
+    border: none;
+    border-radius: 26px;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid  rgb(209, 191, 85);
+}
+#login-btn{
+    padding: 10px 15px;
+    border: 2px solid  rgb(209, 191, 85);
+    background-color: transparent;
+    color: black;
+}
+#login-btn:hover{
+    color: black;
+    transform: translatey(-2px);
+}
+#signup-btn:hover{
+    padding: 10px 15px;
+    transform: translatey(-2px);
+}
+.Help{
+    font-weight:400;
+    font-size: 18px;
+    margin-top: 3px;
+    text-decoration: none;
+    color: black;
+}
+
+aside{
+    display: none;
+    gap: 10px;
+    padding-top: 45px ;
+    position: fixed;
+    background-color: blue;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 40px;
+    transition: all 0.22s ease-in-out;
+}
+aside:hover .aside-span{
+    opacity: 1;
+}
+aside:hover{
+    width: 110px;
+}
+aside li:hover{
+    background-color: black;
+    width: 100%;
+}
+aside span{
+    opacity: 0;
+}
+aside ul, aside li, aside a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    line-height: 3;
+}
+aside li{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: brown;
+    padding-left: 15px;    
+}
+
+
+
+
+.section1{
+    height: 120vh;
+    display: flex;
+    padding-top: 170px;
+    justify-content: space-around;
+}
+.section1-card2{
+    width: 600px;
+    border: 14px solid white;
+    border-radius: 15px;
+    height: 55d0px;
+}
+.section1-card1{
+    width: 530px;
+    background-color: transparent;
+}
+.trusted-card1{
+    width: 260px;
+    padding-top: 70px;
+    font-weight: 600;
+    line-height: 3;
+}
+.Refining{
+    font-size: 80px;
+    font-family: cursive;
+}
+.Refining span{
+    color: rgb(209, 191, 85);
+    font-style: italic;
+}
+.bio{
+    color: rgb(95, 95, 95);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.section1-card1 button{
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 16px 22px;
+    cursor: pointer;
+    background-color:  rgb(209, 191, 85) ;
+    border: none;
+    margin-right: 14px;
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid  rgb(209, 191, 85);
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and  (max-width: 1199px) {
+    body{
+        background-color: greenyellow;
+    }
+    Aside{
+            display: block;
+    }
+    nav{
+        display: none;
+    }
+    main{
+        padding-left: 50px;
+    }
+}
